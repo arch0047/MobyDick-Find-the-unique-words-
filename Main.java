@@ -7,7 +7,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
 
-// https://www.youtube.com/watch?v=1Kxc6zlNJ6E
 public class Main {
 
     public static final int OCCURRENCES=2000;
@@ -36,54 +35,6 @@ public class Main {
         System.out.println();
         System.out.println("Unique words are: " + words);
 
-        // the answer is  Number of unique words are: 35108
-
-        //*********************************** Solution 2  ***********************
-
-      /* Path path = Paths.get(System.getProperty("user.dir"))
-                .resolve("C:/Users/archa/OneDrive/Skrivebord/whale2 book.txt");
-
-       BufferedReader reader = new BufferedReader(new FileReader(path.toFile()));
-
-         int totalLines=0;
-         int totalWords=0;
-
-        Set<String> wordsFromTxt= new HashSet<>();
-        String Line = reader.readLine();
-
-        while(Line !=null)
-        {
-            System.out.println("Checking line:"+ Line);
-            if(!Line.trim().equals(" "))
-            {
-                String [] words =Line.split("");
-                totalWords += words.length;
-                for (String word: words)
-                {
-                     String cleanedUpWord = word.toLowerCase()
-                     .replace(",","")
-                     .replace(":","")
-                     .replace("\"","")
-                     .replace("?","")
-                      .replace("--","");
-                    wordsFromTxt.add(cleanedUpWord);
-
-                 }
-            }
-            totalLines ++;
-              Line = reader.readLine();
-        }
-        System.out.println("wordsFromTxt");
-        System.out.println();
-        System.out.println(" Number of unique words are :"+wordsFromTxt.size()+" List of the words:  " wordsFromTxt);
-        System.out.println();   */
-
-// Answer is ****  Number of unique words are :53[,  , !, $, &, ', (, ), *, -, ., /, 0, 1, 2, 3, 4,
-// 5, 6, 7, 8, 9, ;, =, [, ], _, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z]
-
-        System.out.println("**************************************");
-        System.out.println("List of the most frequently occurring words from the book: ");
-        System.out.println();
 
         /** Reading the book in to a Map */
 
